@@ -1,0 +1,616 @@
+/* ========================== CSS Reset ========================== */
+* {
+	border: 0 none;	
+	font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+.box :last-child {
+	margin-bottom: 0;
+}
+
+html {
+	overflow: auto; 
+	overflow-x: hidden;
+}
+
+/* ========================== General Styles ========================== */
+.bgImage {
+	border: none;
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 930px;
+}
+
+a {
+	color: #bf0055;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+em {
+	font-style: italic;
+}
+
+h2, h3, h4, h5 {
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+h2 {
+	border-bottom: 1px dashed #ccc;
+	color: #bf0055;
+	font-size: 32px;
+	padding-bottom: 10px;
+}
+
+h4 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+img {
+	border-bottom: 8px solid #bf0055;
+	margin-bottom: 15px;
+}
+
+img.left {
+	margin-right: 15px;
+}
+
+img.right {
+	margin-left: 15px;
+}
+
+p, li {
+	color: #333;
+	font-size: 11px;
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+
+p.intro {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 22px;
+}
+
+li {
+	margin: 0;
+}
+
+ol {
+	list-style-position: inside;
+	margin-bottom: 15px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.button, button {
+	background-color: #bf0055;
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 11px;
+	padding: 5px 10px;
+}
+
+.button:hover {
+	background-color: #000;
+	text-decoration: none;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* ========================== Form Elements Styles ========================== */
+input, textarea {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #333;
+	font-size: 11px;
+	padding: 6px;
+	width: 50%;
+}
+
+.search input {
+	width: 68%;
+}
+
+.search div {
+	margin: 0;
+	position: relative;
+}
+
+.search button {
+	padding: 6px 10px;
+	right: 0;
+	position: absolute;
+	top: -28px;
+}
+
+form > div {
+	margin-bottom: 15px;
+}
+
+label {	
+	color: #333;
+	display: block;
+	font-size: 11px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+textarea {
+	width: 65%;
+}
+
+.ok p {
+	background: url("images/check.png") no-repeat 0% 50%;
+	padding-left: 18px;
+}
+
+.error p {
+	background: url("images/error.png") no-repeat 0% 50%;
+	padding-left: 18px;
+}
+
+#contactForm button {
+	padding: 7px 10px;
+}
+
+/* ========================== Tables Styles ========================== */
+table {
+	border-collapse: collapse;
+	font-size: 11px;
+	width: 100%;
+}
+
+th {
+	background-color: #ececec;
+	border-top: 1px solid #aaa;
+	font-weight: bold;
+	padding: 12px 10px;
+	text-align: left;
+}
+
+td {
+	border-top: 1px solid #ccc;
+	padding: 12px 10px;
+}
+
+/* ========================== Header Styles ========================== */
+#header {
+	background: url("images/header.png");
+	left: 0;
+	height: 73px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+
+#header h1 {
+	float: left;
+	margin-top: 20px;
+	text-indent: -9999px;
+}
+
+#header h1 a {
+	background: url("images/logo.png") no-repeat top left;
+	display: block;
+	height: 33px;
+	width: 204px;
+}
+
+#header ul {
+	float: right;
+}
+
+#header ul li {
+	float: left;
+	margin-left: 20px;
+	padding-top: 28px;
+}
+
+#header ul li:hover, #header ul li.active {
+	border-top: 4px solid #bf0055;
+	padding-top: 24px;
+}
+
+#header ul li a {
+	color: #fff;
+	font-size: 14px;
+	text-transform: lowercase;
+}
+
+#header ul li a:hover {
+	text-decoration: none;
+}
+
+/* ========================== Content Styles ========================== */
+.content {
+	background: url("images/content.png");
+	margin: 88px auto 70px;
+	padding: 6px 0;
+	position: relative;
+	width: 930px;
+}
+
+.content .wrapper {
+	background: url("images/pattern.jpg");
+	overflow: hidden;
+	padding: 9px;
+	width: 900px;
+}
+
+.contentWrapper {
+	float: left;
+}
+
+#scrollWrapper {
+	width: 15000px;
+}
+
+.box, .mainContent, .portfolio li {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 8px;
+	width: 272px;
+}
+
+.mainContent {
+	float: left;
+	width: 582px;
+}
+
+#full_width .mainContent {
+	width: auto;
+}
+
+.sidebar {
+	float: right;
+	width: 285px;
+}
+
+.sidebar .box {
+	background-color: #edeced;
+	border: none;
+	margin-bottom: 15px;
+	padding: 15px;
+	width: 255px;
+}
+
+.sidebar img {
+	margin-bottom: 8px;
+}
+
+.box.left, .portfolio li {
+	margin-right: 15px;
+}
+
+.box h3, .portfolio h3 {
+	background: url("images/titlePattern.png");
+	color: #444;
+	font-size: 13px;
+	margin-bottom: 12px;
+	padding: 6px 6px 7px;
+	text-transform: uppercase;
+}
+
+.sidebar .box h3 {
+	background: none;
+	color: #444;
+	font-size: 13px;
+	margin-bottom: 12px;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.content ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.blogHeadline h4 {
+	border-bottom: 1px dashed #ccc;
+	border-top: 1px dashed #ccc;
+	font-size: 12px;
+	margin: 0;
+	padding: 7px 0;
+}
+
+.blogHeadline h4 a {
+	color: #333;
+}
+
+.headlineDate, .headlineComments, .headlineCat {
+	float: left;
+	padding: 7px 7px 15px 0;
+	width: 48px;
+}
+
+.headlineCat {
+	border-left: 1px dashed #ccc;
+	border-right: 1px dashed #ccc;
+	padding: 7px;
+	width: 138px;
+}
+
+.headlineComments {
+	padding: 7px 0 7px 7px;
+}
+
+.blogHeadline p {
+	font-size: 10px;
+	margin-bottom: 0;
+}
+
+.blogHeadline span {
+	color: #777;
+}
+
+.headlineComments p {
+	background: url("images/blogheadline.png") no-repeat 0% 50%;
+	padding-left: 22px;
+}
+
+.headlineComments p:first-child {
+	background: none;
+	padding: 0;
+}
+
+.content .portfolio {
+	list-style: none;
+}
+
+.portfolio li {
+	float: left;
+	margin-bottom: 15px;
+}
+
+.portfolio li.last {
+	margin-right: 0;
+}
+
+.portfolio img, .portfolio p, .portfolio h3 {
+	border: none;
+	margin-bottom: 5px;
+}
+
+/* ========================== Blog Styles ========================== */
+.blog {
+	clear: left;
+	overflow: hidden;
+}
+
+.blogHeader {
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 12px;
+	padding: 5px 0 12px 60px;
+	position: relative;
+}
+
+.blogHeader p {
+	margin-bottom: 0;
+}
+
+.blogContent {
+	padding-left: 60px;
+}
+
+.blogHeader .date {
+	background: url("images/date.png") no-repeat top left;
+	color: #fff;
+	font-size: 18px;
+	height: 37px;
+	left: 0;
+	line-height: 12px;
+	padding-top: 11px;
+	position: absolute;
+	text-align: center;
+	top: 6px;
+	width: 48px;
+}
+
+.blogHeader .date span {
+	font-size: 10px;
+}
+
+.blogHeader h2 {
+	border: none;
+	font-size: 25px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#postsNav {
+	clear: both;
+	padding: 8px 0;
+	overflow: hidden;
+	width: 600px;
+}
+
+#postsNav a {
+	font-size: 12px;
+}
+
+/* ========================== Slider Styles ========================== */
+#slider {
+	border: 5px solid #000;
+	height: 248px;
+	margin-bottom: 3px;
+	overflow: hidden;
+}
+
+#slider li {
+	height: 248px;
+	width: 890px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider li img {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+#slider li h2, #slider li p {
+	background: url("images/slider.png");
+	border: none;
+	clear: right;
+	color: #fff;
+	float: right;
+	font-size: 19px;
+	margin: 15px 0 0 0;
+	padding: 10px 20px;
+	position: relative;
+	text-transform: none;
+}
+
+#slider li p {
+	font-size: 11px;
+	margin-top: 8px;
+	padding: 10px;
+	width: 230px;
+}
+
+#slider li .button {
+	bottom: -15px;
+	position: absolute;
+	right: 20px;
+}
+
+#sliderNav {
+	margin-bottom: 20px;
+}
+
+#sliderNav a {
+	background-color: #000;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-right: 5px;
+	padding: 3px 6px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#sliderNav a.activeSlide, #sliderNav a:hover {
+	background-color: #bf0055;
+	text-decoration: none;
+}
+
+/* ========================== Footer Styles ========================== */
+#footer {
+	background: url("images/header.png");
+	bottom: 0;
+	height: 65px;
+	position: fixed;
+	width: 100%;
+}
+
+#footer ul {
+	margin: 5px 0;
+	text-align: center;
+}
+
+#footer li {
+	border-right: 1px solid #fff;
+	color: #fff;
+	display: inline;
+	font-size: 10px;
+	padding: 0 8px;
+	text-transform: uppercase;
+}
+
+#footer li.last {
+	border: none;
+}
+
+/* ========================== Social List Styles ========================== */
+#footer .social {
+	margin: 10px auto 0;
+	overflow: hidden;
+	width: 88px;
+}
+
+#footer .social li {
+	border: none;
+	float: left;
+	line-height: 0;
+	margin-right: 6px;
+	padding: 0;
+	text-indent: -9999px;
+}
+
+#footer .social li a {
+	background: url("images/social.png") no-repeat top left;
+	display: block;
+	height: 16px;
+	width: 16px;
+}
+
+#footer .social li a[title="DeviantArt"] {
+	background-position: -16px 0;
+}
+#footer .social li a[title="Digg"] {
+	background-position: -32px 0;
+}
+#footer .social li a[title="Facebook"] {
+	background-position: -48px 0;
+}
+#footer .social li a[title="Linkedin"] {
+	background-position: -64px 0;
+}
+#footer .social li a[title="MySpace"] {
+	background-position: -80px 0;
+}
+#footer .social li a[title="StumbleUpon"] {
+	background-position: -96px 0;
+}
+#footer .social li a[title="Tumblr"] {
+	background-position: -112px 0;
+}
+#footer .social li a[title="Twitter"] {
+	background-position: -128px 0;
+}
+#footer .social li a[title="Vimeo"] {
+	background-position: -144px 0;
+}

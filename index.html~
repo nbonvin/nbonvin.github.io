@@ -395,8 +395,7 @@
 						<h2>About Me</h2>
 						<p>Nicolas Bonvin is a PhD student at the Distributed Information Systems Laboratory (<a href="http://lsir.epfl.ch">LSIR</a>) of Ecole Polytechnique Fédérale de Lausanne (<a href="http://www.epfl.ch">EPFL</a>). He obtained his M.Sc. in 2005 at <a href="http://www.epfl.ch">EPFL</a>. From 2005 to 2007, he has worked as a consultant at <a href="http://www.novell.com">Novell Inc</a>. and has been involved in projects related to identity management, business process modeling, infrastructure and software development.</p>
 						<p>In 2007, he has joined <a href="http://lsir.epfl.ch">LSIR</a> as a PhD student, working on P2P networks, large-scale systems and cloud computing and taking part of several European projects, including NEPOMUK and OKKAM. He has a publication record to high quality conferences such as IEEE ICDE, ACM SOCC, IEEE/ACM CCGRID , IEEE CLOUD, CAiSE. His research interests includes large-scale systems, storage systems, databases, networking and security.</p>
-
-											
+						
 						<div id="note"></div>
 						<!--
 						<form id="contactForm" action="javascript:alert('success!');">
@@ -448,7 +447,6 @@
 								<li><strong>Email:</strong> <a href="contact@nbonvin.me" title="Mail">contact@nbonvin.me</a></li>
 								<li><strong>Twitter:</strong> <a href="https://twitter.com/nbonvin">@nbonvin</a></li>
 								<li><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/nbonvin">nbonvin</a></li>
-								<li><strong>EPFL work page:</strong> <a href="http://lsirpeople.epfl.ch/nbonvin">private homepage</a></li>
 							</ul>
 						</div>
 					</div>
