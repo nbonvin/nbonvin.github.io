@@ -83,6 +83,12 @@ img.right {
 	margin-left: 15px;
 }
 
+img.imgPublications {
+	border-bottom: 0px;
+	margin-bottom: 0px;
+	vertical-align: middle;
+}
+
 p, li {
 	color: #333;
 	font-size: 11px;
